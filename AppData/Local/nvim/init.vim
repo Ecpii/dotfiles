@@ -89,7 +89,7 @@ let g:tex_flavor='latex'
 let g:vimtex_view_general_viewer = 'SumatraPDF'
 let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
 let g:vimtex_view_general_options_latexmk = '-reuse-instance'
-"let g:vimtex_fold_enabled = 1
+let g:vimtex_fold_enabled = 1
 let g:vimtex_fold_manual = 1
 set fillchars=fold:\ 
 
