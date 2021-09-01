@@ -41,6 +41,7 @@ let g:tokyonight_style = 'storm' " available: night, storm
 colorscheme tokyonight
 autocmd BufEnter,FileType tex colorscheme seoul256
 autocmd BufEnter,FileType markdown colorscheme nord
+autocmd BufEnter,FileType markdown set spell
 
 " keymappings
 
@@ -75,6 +76,8 @@ let g:firenvim_config = {
         \ },
     \ }
 \ }
+
+au BufEnter stackedit.io_*.txt set filetype=markdown
 
 if exists('g:started_by_firenvim')
     set guifont=JetBrains\ Mono:h10
