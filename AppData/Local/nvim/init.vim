@@ -40,8 +40,14 @@ let g:airline_powerline_fonts = 1
 let g:tokyonight_style = 'storm' " available: night, storm
 colorscheme tokyonight
 autocmd BufEnter,FileType tex colorscheme seoul256
-autocmd BufEnter,FileType markdown colorscheme nord
-autocmd BufEnter,FileType markdown set spell
+autocmd BufEnter,FileType markdown call SetMarkdownOptions()
+
+function SetMarkdownOptions()
+    let g:nord_italic = 1
+    colorscheme nord
+    set spell
+    set conceallevel=2
+endfunction
 
 " keymappings
 
