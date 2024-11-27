@@ -20,6 +20,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'sainnhe/everforest', { 'for': 'tex' }
+Plug 'xiyaowong/transparent.nvim'
 
 call plug#end()
 
