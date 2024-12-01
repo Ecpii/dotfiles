@@ -85,3 +85,8 @@ alias venv='source .venv/bin/activate'
 
 bindkey -v
 
+{{- if eq .chezmoi.os "linux" }}
+export CPLUS_INCLUDE_PATH=/usr/include/boost:
+export LIBRARY_PATH=/usr/include/boost:
+export LD_LIBRARY_PATH=/usr/include/boost:
+{{ end }}
