@@ -1,0 +1,28 @@
+" basics
+set nu! rnu!
+set spelllang=en
+set nospell
+set backspace=indent,eol,start
+set ignorecase
+set smartcase
+set list lcs=tab:\|\ ,trail:•
+set title
+
+" keymappings
+
+" normal editing shortcuts
+inoremap <C-v> <C-r>+
+nnoremap <C-v> "+p
+vnoremap <C-c> "+y
+inoremap <C-a> <Esc>ggVG
+
+" Stay in visual mode when indenting. You will never have to run gv after
+" performing an indentation.
+vnoremap < <gv
+vnoremap > >gv
+
+" movement keys go on line wraps
+nnoremap <silent> k gk
+nnoremap <silent> j gj
+nnoremap <silent> $ g$
+nnoremap <silent> 0 g0
