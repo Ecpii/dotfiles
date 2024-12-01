@@ -14,3 +14,7 @@
 	s = status
 [core]
 	editor = nvim
+{{- if eq .chezmoi.os "windows" }}
+[safe]
+	directory = C:/Users/epicw/.local/share/chezmoi
+{{- end }}
