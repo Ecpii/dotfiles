@@ -18,5 +18,5 @@ function hw() {
 	cd "C:/Users/epicw/Documents/uMich/eecs215/hw"
 }
 
-function n() {nvim}
+function n([string]$cmd) {nvim $cmd}
 
