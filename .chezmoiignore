@@ -1,8 +1,11 @@
 {{- if ne .chezmoi.os "windows" }}
-Documents/PowerShell
+Documents
 AppData
 {{- end }}
 {{- if eq .chezmoi.os "windows"}}
 .config/nvim
 .zshrc
 {{- end }}
+{{- if eq .chezmoi.os "linux"}}
+.vscodevimrc
+{{- end}}
